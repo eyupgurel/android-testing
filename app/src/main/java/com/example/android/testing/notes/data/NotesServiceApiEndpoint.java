@@ -26,8 +26,6 @@ public final class NotesServiceApiEndpoint {
 
     static {
         DATA = new ArrayMap(2);
-        int i = 0;
-        i++;
         addNote("Oh yes!", "I demand trial by Unit testing", null);
         addNote("Espresso", "UI Testing for Android", null);
     }
