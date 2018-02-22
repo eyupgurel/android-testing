@@ -18,7 +18,6 @@ package com.example.android.testing.notes.notes;
 
 import com.example.android.testing.notes.Injection;
 import com.example.android.testing.notes.addnote.AddNoteActivity;
-import com.example.android.testing.notes.datastructures.linkedlist;
 import com.example.android.testing.notes.notedetail.NoteDetailActivity;
 import com.example.android.testing.notes.R;
 import com.example.android.testing.notes.data.Note;
@@ -397,109 +396,6 @@ public class NotesFragment extends Fragment implements NotesContract.View {
         super.onCreate(savedInstanceState);
         mListAdapter = new NotesAdapter(new ArrayList<Note>(0), mItemListener);
         mActionsListener = new NotesPresenter(Injection.provideNotesRepository(), this);
-        //_____________________________________________________________
-//        linkedlist llist = new linkedlist(new int[]{6,2,3,4,9,7,11,4,8});
-//        String sllist = llist.print();
-//        llist.repositionAll(5);
-//        sllist = llist.print();
-//
-//
-//        linkedlist llist2 = new linkedlist(new int[]{3,5,8,5,10,2,1});
-//        sllist = llist2.print();
-//        llist2.repositionAll(5);
-//        sllist = llist2.print();
-//
-//
-//
-//
-//        linkedlist llist3 = new linkedlist();
-//        llist3.add(5);
-//        llist3.add(4);
-//        llist3.add(5);
-//        linkedlist.node n= llist3.add(8);
-//        llist3.add(8);
-//        llist3.add(6);
-//        llist3.add(8);
-//        sllist = llist3.print();
-//
-//        llist3.remove(n);
-//        sllist = llist3.print();
-//        //llist3.removeDuplicates();
-//        llist3.removeDuplicates2();
-//        sllist = llist3.print();
-//
-//
-//
-//        int[][] matrix = {{ 1, 2, 4 , 19, 21},
-//                          { 1, 3, 9 , 17, 32},
-//                          { 5, 6, 11 , 19, 44},
-//                          { 9, 2, 2 , 88, 99},
-//                          { 1, 1, 9 , 91, 2}};
-//        System.out.println("______________________________________________________________");
-//        printMatrix(matrix);
-//        System.out.println("______________________________________________________________");
-//        rotateMatrixInplace(matrix);
-//        printMatrix(matrix);
-//        System.out.println("______________________________________________________________");
-//        rotateMatrixInplace(matrix);
-//        printMatrix(matrix);
-//        System.out.println("______________________________________________________________");
-//        rotateMatrixInplace(matrix);
-//        printMatrix(matrix);
-//        System.out.println("______________________________________________________________");
-//        rotateMatrixInplace(matrix);
-//        printMatrix(matrix);
-//        System.out.println("______________________________________________________________");
-//        int [][]rotatedMatrix = rotateMatrix(matrix);
-//        rotatedMatrix = rotateMatrix(rotatedMatrix);
-//        rotatedMatrix = rotateMatrix(rotatedMatrix);
-//        rotatedMatrix = rotateMatrix(rotatedMatrix);
-//
-//        System.out.println("______________________________________________________________");
-//        printMatrix(rotatedMatrix);
-//        System.out.println("______________________________________________________________");
-//
-//        String zipped = compress("aabcccccddddaaaaa");
-//        zipped = compress("abccda");
-//        boolean bIsOneAway = isOneAway("pale", "ple");
-//        bIsOneAway = isOneAway("pales", "pale");
-//        bIsOneAway = isOneAway("pale", "bale");
-//        bIsOneAway = isOneAway("pale", "bae");
-//
-//        bIsOneAway = isOneAway("apple", "aple");
-//        bIsOneAway = isOneAway("apple", "apples");
-//        bIsOneAway = isOneAway("apple", "bpple");
-//        bIsOneAway = isOneAway("apple", "appl");
-//        bIsOneAway = isOneAway("apple", "pple");
-//        bIsOneAway = isOneAway("apple", "appe");
-//        bIsOneAway = isOneAway("apple", "appxe");
-//        bIsOneAway = isOneAway("apple", "appre");
-//
-//        boolean b = doesPermutateToPalindrome("Tact Coa");
-//        b = isPermutationOfPalindrome("Tact Coa");
-//        b = isPermutationOfPalindrome("Tacts Coa");
-//        char[] urlInput = "Mr John Smith    ".toCharArray();
-//
-//        replaceSpaces(urlInput,13);
-//        String urlified = URLify("Mr John Smith    ");
-//
-//        boolean arePermutations = arePermutations("fuck" , "fcuk");
-//        arePermutations = arePermutations("tcuk" , "fcuk");
-//        arePermutations = arePermutations2("tcuk" , "fcuk");
-//        arePermutations = arePermutations2("fcuk" , "fcuk");
-//        arePermutations = arePermutations3("tcuk" , "fcuk");
-//        arePermutations = arePermutations3("fcuk" , "fcuk");
-//
-//        boolean unique = isUnique("ABCD");
-//        unique = isUniqueChars("abaq");
-//        unique = isUniqueChars("dac");
-//        unique = isUnique("ABAQ");
-//        unique = isUnique("DAC");
-//        unique = isUnique2("ABAQ");
-//        unique = isUnique2("DAC");
-//        ArrayList<String> permutations = permutation("ABC");
-//        permutations= permutation("ABCD");
-        //_____________________________________________________________
     }
 
     @Override
