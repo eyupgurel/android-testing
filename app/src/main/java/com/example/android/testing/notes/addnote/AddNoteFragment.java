@@ -79,8 +79,7 @@ public class AddNoteFragment extends Fragment implements AddNoteContract.View {
         mActionListener = new AddNotePresenter(Injection.provideNotesRepository(), this,
                 Injection.provideImageFile());
 
-        FloatingActionButton fab =
-                (FloatingActionButton) getActivity().findViewById(R.id.fab_add_notes);
+        FloatingActionButton fab = getActivity().findViewById(R.id.fab_add_notes);
         fab.setImageResource(R.drawable.ic_done);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,9 +95,9 @@ public class AddNoteFragment extends Fragment implements AddNoteContract.View {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_addnote, container, false);
-        mTitle = (TextView) root.findViewById(R.id.add_note_title);
-        mDescription = (TextView) root.findViewById(R.id.add_note_description);
-        mImageThumbnail = (ImageView) root.findViewById(R.id.add_note_image_thumbnail);
+        mTitle = root.findViewById(R.id.add_note_title);
+        mDescription = root.findViewById(R.id.add_note_description);
+        mImageThumbnail = root.findViewById(R.id.add_note_image_thumbnail);
 
         setHasOptionsMenu(true);
         setRetainInstance(true);

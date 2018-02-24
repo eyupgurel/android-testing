@@ -70,21 +70,21 @@ public class AddNoteScreenTest {
     public IntentsTestRule<AddNoteActivity> mAddNoteIntentsTestRule =
             new IntentsTestRule<>(AddNoteActivity.class);
 
-    /**
-     * Prepare your test fixture for this test. In this case we register an IdlingResources with
-     * Espresso. IdlingResource resource is a great way to tell Espresso when your app is in an
-     * idle state. This helps Espresso to synchronize your test actions, which makes tests significantly
-     * more reliable.
-     */
-    @Before
-    public void registerIdlingResource() {
-        Espresso.registerIdlingResources(
-                mAddNoteIntentsTestRule.getActivity().getCountingIdlingResource());
-    }
+//    /**
+//     * Prepare your test fixture for this test. In this case we register an IdlingResources with
+//     * Espresso. IdlingResource resource is a great way to tell Espresso when your app is in an
+//     * idle state. This helps Espresso to synchronize your test actions, which makes tests significantly
+//     * more reliable.
+//     */
+//    @Before
+//    public void registerIdlingResource() {
+//        Espresso.registerIdlingResources(
+//                mAddNoteIntentsTestRule.getActivity().getCountingIdlingResource());
+//    }
 
-    @Test
-    public void addImageToNote_ShowsThumbnailInUi() {
-        fail("Implement in step 8");
+//    @Test
+//    public void addImageToNote_ShowsThumbnailInUi() {
+//    //    fail("Implement in step 8");
 //        // Create an Activity Result which can be used to stub the camera Intent
 //        ActivityResult result = createImageCaptureActivityResultStub();
 //        // If there is an Intent with ACTION_IMAGE_CAPTURE, intercept the Intent and respond with
@@ -102,7 +102,7 @@ public class AddNoteScreenTest {
 //                .check(matches(allOf(
 //                        hasDrawable(), // Check ImageView has a drawable set with a custom matcher
 //                        isDisplayed())));
-    }
+//    }
 
     @Test
     public void errorShownOnEmptyMessage() {
@@ -120,14 +120,14 @@ public class AddNoteScreenTest {
 //        onView(withText(emptyNoteMessageText)).check(matches(isDisplayed()));
     }
 
-    /**
-     * Unregister your Idling Resource so it can be garbage collected and does not leak any memory.
-     */
-    @After
-    public void unregisterIdlingResource() {
-        Espresso.unregisterIdlingResources(
-                mAddNoteIntentsTestRule.getActivity().getCountingIdlingResource());
-    }
+ //   /**
+ //    * Unregister your Idling Resource so it can be garbage collected and does not leak any memory.
+ //    */
+ //   @After
+ //   public void unregisterIdlingResource() {
+ //       Espresso.unregisterIdlingResources(
+ //               mAddNoteIntentsTestRule.getActivity().getCountingIdlingResource());
+ //   }
 
     /**
      * Convenience method which opens the options menu and select the take image option.

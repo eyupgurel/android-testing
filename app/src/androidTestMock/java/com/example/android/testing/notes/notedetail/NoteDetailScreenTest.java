@@ -94,7 +94,7 @@ public class NoteDetailScreenTest {
         Intent startIntent = new Intent();
         startIntent.putExtra(NoteDetailActivity.EXTRA_NOTE_ID, NOTE.getId());
         mNoteDetailActivityTestRule.launchActivity(startIntent);
-        registerIdlingResource();
+        //registerIdlingResource();
     }
 
     @Test
@@ -108,22 +108,22 @@ public class NoteDetailScreenTest {
                 isDisplayed())));
     }
 
-    /**
-     * Unregister your Idling Resource so it can be garbage collected and does not leak any memory.
-     */
-    @After
-    public void unregisterIdlingResource() {
-        Espresso.unregisterIdlingResources(
-                mNoteDetailActivityTestRule.getActivity().getCountingIdlingResource());
-    }
+//    /**
+//     * Unregister your Idling Resource so it can be garbage collected and does not leak any memory.
+//     */
+//    @After
+//    public void unregisterIdlingResource() {
+//        Espresso.unregisterIdlingResources(
+//                mNoteDetailActivityTestRule.getActivity().getCountingIdlingResource());
+//    }
 
-    /**
-     * Convenience method to register an IdlingResources with Espresso. IdlingResource resource is
-     * a great way to tell Espresso when your app is in an idle state. This helps Espresso to
-     * synchronize your test actions, which makes tests significantly more reliable.
-     */
-    private void registerIdlingResource() {
-        Espresso.registerIdlingResources(
-                mNoteDetailActivityTestRule.getActivity().getCountingIdlingResource());
-    }
+//    /**
+//     * Convenience method to register an IdlingResources with Espresso. IdlingResource resource is
+//     * a great way to tell Espresso when your app is in an idle state. This helps Espresso to
+//     * synchronize your test actions, which makes tests significantly more reliable.
+//     */
+//    private void registerIdlingResource() {
+//        Espresso.registerIdlingResources(
+//                mNoteDetailActivityTestRule.getActivity().getCountingIdlingResource());
+//    }
 }
