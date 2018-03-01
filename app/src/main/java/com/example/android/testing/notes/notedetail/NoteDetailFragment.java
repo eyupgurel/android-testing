@@ -70,7 +70,7 @@ public class NoteDetailFragment extends Fragment implements NoteDetailContract.V
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_detail, container, false);
         mDetailTitle = root.findViewById(R.id.note_detail_title);
-        mDetailDescription = (TextView) root.findViewById(R.id.note_detail_description);
+        mDetailDescription = root.findViewById(R.id.note_detail_description);
         mDetailImage = (ImageView) root.findViewById(R.id.note_detail_image);
         return root;
     }
