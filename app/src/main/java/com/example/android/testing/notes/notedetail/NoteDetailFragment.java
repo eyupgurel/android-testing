@@ -71,7 +71,7 @@ public class NoteDetailFragment extends Fragment implements NoteDetailContract.V
         View root = inflater.inflate(R.layout.fragment_detail, container, false);
         mDetailTitle = root.findViewById(R.id.note_detail_title);
         mDetailDescription = root.findViewById(R.id.note_detail_description);
-        mDetailImage = (ImageView) root.findViewById(R.id.note_detail_image);
+        mDetailImage = root.findViewById(R.id.note_detail_image);
         return root;
     }
 
