@@ -64,7 +64,7 @@ public class AppNavigationTest {
     @Test
     public void clickOnStatisticsNavigationItem_ShowsStatisticsScreen() {
  //       fail("Implement step 9");
-//        // Open Drawer to click on navigation.
+        // Open Drawer to click on navigation.
         onView(withId(R.id.drawer_layout))
                 .check(matches(isClosed(Gravity.LEFT))) // Left Drawer should be closed.
                 .perform(open()); // Open Drawer
