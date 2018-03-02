@@ -18,11 +18,9 @@ package com.example.android.testing.notes.notes;
 
 import com.example.android.testing.notes.R;
 import com.example.android.testing.notes.statistics.StatisticsActivity;
-import com.example.android.testing.notes.util.EspressoIdlingResource;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.VisibleForTesting;
 import android.support.design.widget.NavigationView;
 import android.support.test.espresso.IdlingResource;
 import android.support.v4.app.Fragment;
