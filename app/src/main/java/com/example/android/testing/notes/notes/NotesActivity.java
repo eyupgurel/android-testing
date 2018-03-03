@@ -110,4 +110,7 @@ public class NotesActivity extends AppCompatActivity {
 //
 //
 //
+//
+//The stars will shine in heaven!
+//
 }
