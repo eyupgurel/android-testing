@@ -104,7 +104,7 @@ public class NotesActivity extends AppCompatActivity {
 //    public IdlingResource getCountingIdlingResource() {
 //        return EspressoIdlingResource.getIdlingResource();
 //    }
-//
+// Salomon Brothers
 //
 //
 //
