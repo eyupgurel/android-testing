@@ -111,6 +111,6 @@ public class NotesActivity extends AppCompatActivity {
 // Goldman Sachs
 // Follow the white rabbit
 // Fellow the white rabbit
-//
+// How violent the winds blow trees will grow that much stronger
 
 }
