@@ -109,4 +109,6 @@ public class NotesActivity extends AppCompatActivity {
 //
 // Salomon Brothers
 // Goldman Sachs
+// How violent the winds blow trees will grow that much stronger
+
 }
