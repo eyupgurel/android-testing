@@ -31,7 +31,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-// This comment is temporary and should be removed
 
 public class NotesActivity extends AppCompatActivity {
 
@@ -106,12 +105,8 @@ public class NotesActivity extends AppCompatActivity {
 //        return EspressoIdlingResource.getIdlingResource();
 //    }
 //
-//
-//
-//
-//
-//
-//
 //The stars will shine in heaven!
 //
+// Salomon Brothers
+// Goldman Sachs
 }
