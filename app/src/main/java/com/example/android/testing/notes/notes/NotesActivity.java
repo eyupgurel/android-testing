@@ -105,12 +105,5 @@ public class NotesActivity extends AppCompatActivity {
 //        return EspressoIdlingResource.getIdlingResource();
 //    }
 // Salomon Brothers
-//
-//
-//
-//
-//
-//
-//The stars will shine in heaven!
-//
+// Goldman Sachs
 }
